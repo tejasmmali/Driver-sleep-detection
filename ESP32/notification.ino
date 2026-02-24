@@ -6,8 +6,8 @@
 const char* ssid = "UwU";
 const char* password = "tejasmali77@";
 
-String botToken = "8516979534:AAFUApMVWsjm-1QspJKT7DxeJ86_oE3LAwQ";
-String chatID = "5018197171";
+String botToken = "your_bot_token_here";
+String chatID = "YOUR_CHAT_ID_HERE";
 
 void sendTelegram(String message) {
   if (WiFi.status() == WL_CONNECTED) {
