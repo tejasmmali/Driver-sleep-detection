@@ -3,8 +3,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid = "UwU";
-const char* password = "tejasmali77@";
+const char* ssid = "Your_SSID_Here";
+const char* password = "your_password_here";
 
 String botToken = "your_bot_token_here";
 String chatID = "YOUR_CHAT_ID_HERE";
