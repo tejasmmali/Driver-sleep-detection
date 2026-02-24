@@ -1,0 +1,44 @@
+// this code is for the esp32 to send a notification to telegram bot 
+
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+const char* ssid = "UwU";
+const char* password = "tejasmali77@";
+
+String botToken = "8516979534:AAFUApMVWsjm-1QspJKT7DxeJ86_oE3LAwQ";
+String chatID = "5018197171";
+
+void sendTelegram(String message) {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+
+    String url = "https://api.telegram.org/bot" + botToken +
+                 "/sendMessage?chat_id=" + chatID +
+                 "&text=" + message;
+
+    http.begin(url);
+    http.GET();
+    http.end();
+  }
+}
+
+void setup() {
+  Serial.begin(9600);
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+  }
+}
+
+void loop() {
+  if (Serial.available()) {
+    char data = Serial.read();
+
+    if (data == 'S') {
+      sendTelegram("🚨 ALERT: Driver sleeping for 5 seconds!");
+    }
+  }
+}
