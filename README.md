@@ -34,4 +34,3 @@ https://app.cirkitdesigner.com/project/30748c38-c57c-428b-a3e8-32bdcb254925
 
 4. Add credentials in ESP32 code
 
-### This is a warm-up project created for Flavor Town.
