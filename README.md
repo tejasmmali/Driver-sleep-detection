@@ -1,6 +1,6 @@
 # Driver-sleep-detection
 an smart safety system that detects eye closure using open cv and triggers hardware alerts and telegram notification 
-
+# youtube - https://youtu.be/Ro1PGaYQGAA?si=deNCF0fOcjrqX8-I
 
 # Used 
 
@@ -21,6 +21,7 @@ an smart safety system that detects eye closure using open cv and triggers hardw
 
 # Circuit Diagram 
 ![Circuit](/circuit_image.png) 
+https://app.cirkitdesigner.com/project/30748c38-c57c-428b-a3e8-32bdcb254925
  
  # Telegram Bot Setup for ESP32 Notification
 
