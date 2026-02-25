@@ -1,6 +1,7 @@
 # Driver-sleep-detection
 an smart safety system that detects eye closure using open cv and triggers hardware alerts and telegram notification 
-# youtube - https://youtu.be/Ro1PGaYQGAA?si=deNCF0fOcjrqX8-I
+
+[Youtube Video](https://youtu.be/Ro1PGaYQGAA?si=fOacbK1fvZLjC9Ne) 
 
 # Used 
 
